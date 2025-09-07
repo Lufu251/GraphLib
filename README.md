@@ -1,48 +1,20 @@
-# SimpleGraph
+# GraphLib
 This is my own implementation of graphs and pathfinding
 
 * [Features](#features)
 * [Notes](#notes)
-* [Building](#building)
-* [Media](#media)
 * [License](#license)
 
 ## Features
-* (Add a features of your project here)
+* **Graph:** data structure
+* **Breadth First Search:** path finding algorithm
+* **Dijkstras:** path finding algorithm
 
 ## Notes
-* (Add a controls here)
-* (Add a additional information here)
-
-## Building
-
-### Prerequisites
-* **CMake** (3.15 or newer)
-* **C++ Compiler** (e.g.,GCC, Clang, MSVC)
-* **Git** (for fetching dependencies)
-* **Emscripten SDK** (only for web builds)
-* **Python 3.8+** (only for web builds)
-
-### Desktop Build (Windows, macOS, Linux)
-1. **Configure and build with CMake:**
-    ```bash
-    mkdir build
-    cd build
-    cmake ..
-    cmake --build .
-    ```
-    The example binaries will be located in the `build/bin` directory.
-
-### Web Build (WebAssembly)
-1.  **Configure and build with Emscripten**
-    ```bash
-    cd tools
-    ./build_web.sh
-    ```
-    Now there should be a HTTP Server running under port 8000 to test your project. The URL should be visible in the active terminal.
-
-## Media
-* (Add a screenshot or GIF of your project here)
+* This is my own graph library i plan to use in my projects. I focused on simplicity and modularity, to be able to implement algorithms on top of it later.
+* Currently I have implemented the graph datastructure and two path searching algorithms(BFS / Dijkstra)
+* BFS is used for searching the shortest path ingoring weights
+* Dijksta is used to search the shortest path for weighted graphs
 
 ## License
 This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.

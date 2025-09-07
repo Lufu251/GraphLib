@@ -205,12 +205,13 @@ struct Dijkstra{
         while (!pq.empty()) {
             Weight d = pq.top().first; // Distance
             NodeID u = pq.top().second; // NodeID
+            pq.pop();
 
             if (d > mesh.distances[u]) {
                 continue; // Continue if current distance is greater than mesh value
             }
 
-            for (const Edge& edge : graph.getNeighbors(u)) {
+            for (const Edge& edge : graph.getNeighbors(u)){
                 NodeID v = edge.target;
                 Weight new_dist = mesh.distances[u] + edge.weight;
 

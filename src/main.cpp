@@ -20,9 +20,9 @@ int main(void)
     Graph undirectedGraph(4, false); // 4 nodes (0 to 3), undirected
 
     undirectedGraph.addEdge(0, 1, 5);
-    undirectedGraph.addEdge(0, 2, 7);
+    undirectedGraph.addEdge(0, 2, 8);
     undirectedGraph.addEdge(1, 2, 2);
-    undirectedGraph.addEdge(1, 3, 4);
+    undirectedGraph.addEdge(1, 3, 9);
     undirectedGraph.addEdge(2, 3, 6);
 
     undirectedGraph.printGraph();
